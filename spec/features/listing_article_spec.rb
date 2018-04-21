@@ -4,7 +4,6 @@ RSpec.feature "Listing Articles" do
 
   before do
     @article1 = Article.create(title: "The first article", body: "Lorem ipsum dolor sit amet, consectur.")
-
     @article2 = Article.create(title: "The Second article", body: "Body of second article")
 
   end
@@ -39,15 +38,7 @@ RSpec.feature "Listing Articles" do
 
     within("h1#no-articles") do
       expect(page).to have_content("No Articles Created")
-
-
     end
   end
-
-
-
-
-
-
 end
 
